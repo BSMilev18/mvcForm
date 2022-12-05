@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fmt="http://java.sun.com/jsp/jstl/fmt">
+<head>
+    <meta charset="UTF-8">
+    <title>Player Confirmation</title>
+</head>
+<body>
+<h2>Player Confirmation</h2>
+<hr>
+<br><br>
+The player has been added.
+<br><br>
+<b>Name</b> : ${athlete.firstName}
+${athlete.lastName}
+<br><br>
+<b>Current Rank</b> : ${athlete.rank}
+<br><br>
+Country : ${athlete.country}
+<br><br>
+<b>Last Won</b> : <fmt:formatDate value="${athlete.lastWon}" type="date" pattern="dd-MM-YYYY"/>
+<br><br>
+<b>Prize Money</b> : ${athlete.prizeMoney}
+</body>
+</html>
